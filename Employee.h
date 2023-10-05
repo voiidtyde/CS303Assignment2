@@ -9,7 +9,6 @@ public:
   Employee(string& name, int id) {
     name = name;
     id = id;
-    healthCare = 0;
   }
   ~Employee();
   virtual double calculateWeeklySalary() = 0;
@@ -19,7 +18,6 @@ public:
 protected:
   string name;
   int id;
-  double healthCare;
 };
 
 
