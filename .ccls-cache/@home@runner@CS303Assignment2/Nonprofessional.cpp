@@ -1,6 +1,8 @@
 #include "Nonprofessional.h"
 
-Nonprofessional::Nonprofessional(string& name, int id, double hourlyRate, int hoursWorked, int yearsAtCompany)
+Nonprofessional::Nonprofessional(const char* name, int id) : Employee(name, id) {}
+
+Nonprofessional::Nonprofessional(const char* name, int id, double hourlyRate, int hoursWorked, int yearsAtCompany)
     : Employee(name, id), hourlyRate(hourlyRate), hoursWorked(hoursWorked), yearsAtCompany(yearsAtCompany) {}
 
 double Nonprofessional::calculateWeeklySalary() {

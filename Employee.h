@@ -7,7 +7,7 @@ using namespace std;
 
 class Employee {
 public:
-  Employee(string& name, int id) {
+  Employee(const char* name, int id) {
     name = name;
     id = id;
   }

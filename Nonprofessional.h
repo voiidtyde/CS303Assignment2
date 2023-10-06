@@ -9,7 +9,8 @@ private:
   int vacationHoursEarned;
   int yearsAtCompany;
 public:
-  Nonprofessional(string& name, int id, double hourlyRate, int hoursWorked, int yearsAtCompany);
+  Nonprofessional(const char* name, int id);
+  Nonprofessional(const char* name, int id, double hourlyRate, int hoursWorked, int yearsAtCompany);
   double calculateWeeklySalary() override;
   double calculateHealthCare() override;
   int calculateVacationDays() override;
