@@ -11,11 +11,12 @@ public:
     name = name;
     id = id;
   }
-  //~Employee();
+  //Creates the three pure virtual functions that will be used in the derived classes
   virtual double calculateWeeklySalary() = 0;
   virtual double calculateHealthCare() = 0;
   virtual int calculateVacationDays() = 0;
 
+//Protected members relevant to ALL employees
 protected:
   string name;
   int id;
