@@ -11,7 +11,7 @@ public:
     name = name;
     id = id;
   }
-  ~Employee();
+  //~Employee();
   virtual double calculateWeeklySalary() = 0;
   virtual double calculateHealthCare() = 0;
   virtual int calculateVacationDays() = 0;
