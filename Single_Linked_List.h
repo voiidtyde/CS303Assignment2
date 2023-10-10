@@ -8,15 +8,16 @@ using namespace std;
 template <typename Item_Type>
 class Single_Linked_List {
 private:
+  //Node struct that contains the data, pointer to the next node, and the constructor for the node struct
   struct Node {
     Item_Type data;
     Node* next;
     Node(const Item_Type& item) : data(item), next(nullptr) {}
   };
 
-  Node* head;
-  Node* tail;
-  size_t num_items;
+  Node* head; //Node pointer to the top of the list
+  Node* tail; //Node pointer to the end of the list
+  size_t num_items;  //number of items in the list
 
 public:
   Single_Linked_List();
